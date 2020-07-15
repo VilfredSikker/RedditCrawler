@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  webapp:
+    build:
+      context: ./webapp
+      dockerfile: dockerfile.dev
+    volumes: # Links the source files to the running container
+      - ./webapp/src:/app/src
+    ports:
+      - "3000:8000"
