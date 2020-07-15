@@ -11,12 +11,12 @@ build is required when packages are updated. Not for src changes.
 src folder is synced with volumes, which should hot-reload new changes
 
 ### Prod mode on port 80
-```docker-compose docker-compose.prod.yml up --build```
+```docker-compose -f docker-compose.prod.yml up --build```
 
 ### Individual Docker Images
 
 #### Webservice
 _Build & run image_: 
 1) go to /webservice/ 
-2) docker build -t reddit_crawler/webservice .
-3) docker run --rm -it reddit_crawler/webservice
+2) docker build -t reddit_crawler_webservice .
+3) docker run --rm -it reddit_crawler_webservice
