@@ -7,3 +7,7 @@ services:
       dockerfile: dockerfile
     ports:
       - "80:80"
+  webservice:
+    build:
+      context: ./webservice
+      dockerfile: dockerfile

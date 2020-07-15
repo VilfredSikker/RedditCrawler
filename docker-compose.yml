@@ -9,3 +9,7 @@ services:
       - ./webapp/src:/app/src
     ports:
       - "3000:8000"
+  webservice:
+    build:
+      context: ./webservice
+      dockerfile: dockerfile
