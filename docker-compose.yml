@@ -1,6 +1,10 @@
 version: "3"
 
 services:
+  api_gateway:
+    build:
+      context: ./api_gateway
+      dockerfile: dockerfile
   webapp:
     build:
       context: ./webapp
