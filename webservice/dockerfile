@@ -4,8 +4,10 @@ WORKDIR /usr/src/webservice
 
 COPY . .
 
-RUN cargo build --release
-
 RUN cargo install --path .
+
+RUN cargo build -q --release
+
+RUN cargo run --release
 
 CMD ["/usr/local/cargo/bin/reddit_crawler_webservice"]
